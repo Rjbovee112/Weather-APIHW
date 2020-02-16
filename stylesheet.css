@@ -4,14 +4,11 @@
     text-align: center;
 }
 
-.weatherCardContainer {
-    display: flex;
-    flex-wrap: wrap;
+.location-forecast {
+    border: red solid 2px;
 }
 
 #wcard1 {
-    border: red soild 2px;
-    padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -19,8 +16,6 @@
   }
 
   #wcard2 {
-    border: red soild 2px;
-    padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -28,8 +23,6 @@
   }
 
   #wcard3 {
-    border: red soild 2px;
-    padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -37,8 +30,6 @@
   }
 
   #wcard4 {
-    border: red soild 2px;
-    padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -46,8 +37,6 @@
   }
 
   #wcard5 {
-    border: red soild 2px;
-    padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
