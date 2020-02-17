@@ -1,6 +1,6 @@
 function theSearch1() {
     var city = $("#searchBar").val();
-    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=44c38455c07369969dfcf31cc60c6f41&units=imperial";
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=cdc3f7e4ca3901f64ba887ddc106084f&units=imperial";
 
     $.ajax({
         url: queryURL,
