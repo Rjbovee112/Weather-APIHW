@@ -10,11 +10,11 @@ function theSearch1() {
         console.log(res1);
         //// this is where the fun is ////
         // moment(1578409200).format("MMMM/Do/YYYY h:m a")
-        var date1 = moment(res1.list[2].dt_txt).format("MMMM Do");
-        var date2 = moment(res1.list[10].dt_txt).format("MMMM Do");
-        var date3 = moment(res1.list[18].dt_txt).format("MMMM Do");
-        var date4 = moment(res1.list[26].dt_txt).format("MMMM Do");
-        var date5 = moment(res1.list[34].dt_txt).format("MMMM Do");
+        var date1 = (res1.list[5].dt_txt).split("-").join("/");
+        var date2 = (res1.list[13].dt_txt).split("-").join("/");
+        var date3 = (res1.list[21].dt_txt).split("-").join("/");
+        var date4 = (res1.list[29].dt_txt).split("-").join("/");
+        var date5 = (res1.list[37].dt_txt).split("-").join("/");
 
         var temp1 = (res1.list[2].main.temp_max + '°F');
         var temp2 = (res1.list[10].main.temp_max + '°F');
@@ -106,8 +106,12 @@ function theSearch1() {
         weatherApp4();
         weatherApp5();
 
-
-
-
     })
 };
+
+$("#searchBtn").on('click', function () {
+    event.preventDefault();
+    console.log('You clicked the submit button or enter')
+    theSearch1();
+
+});
