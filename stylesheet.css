@@ -1,19 +1,16 @@
 #uv {
   margin: auto;
-  background-color: #51d1cfd8;
-  height: 100%;
-  width: 18%;
+  background-color: white;
+  height: 150px;
+  width: 150px;
   border-radius: 3px;
-  padding: 10px !important;
-
-  border: purple solid 2px;
-
+  border: violet solid 2px;
 }
 
 .location-forecast {
-    border: red solid 2px;
     text-align: center;
     margin: 10px;
+    border: red solid 2px;
 }
 
 #weatherText {
@@ -31,11 +28,10 @@
 }
 .weatherBoxs{
   margin: 0 0 15px 0 !important;
-  background-color: #51d1cfd8;
-  height: 100%;
-  width: 18%;
-  border-radius: 3px;
-  padding: 10px !important;
+  background-color: white;
+  height: 50%;
+  width: 25%;
+  padding: 5px !important;
   
 }
 .weatherBoxs p{
