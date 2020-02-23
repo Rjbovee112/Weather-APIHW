@@ -10,6 +10,7 @@ function theSearch1() {
         console.log(res1);
         //// this is where the fun is ////
         // moment(1578409200).format("MMMM/Do/YYYY h:m a")
+
         var date1 = (res1.list[5].dt_txt).split("-").join("/");
         var date2 = (res1.list[13].dt_txt).split("-").join("/");
         var date3 = (res1.list[21].dt_txt).split("-").join("/");
