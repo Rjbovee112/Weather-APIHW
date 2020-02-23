@@ -1,3 +1,14 @@
+function addRecSeBtn(cityName) {
+    if (addedCities[cityName]) { return }
+    addedCities[cityName] = true;
+    var b = $("<button type='submit' data-value='" + buttonCount + "'>");
+    b.addClass("searched");
+    b.text(cityName)
+    // storing the searched city to a p tag below inside the search div
+    $("#serched-cities").prepend(b);
+}
+
+
 function theSearch1() {
     var city = $("#searchBar").val();
     var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=cdc3f7e4ca3901f64ba887ddc106084f&units=imperial";
@@ -116,3 +127,5 @@ $("#searchBtn").on('click', function () {
     theSearch1();
 
 });
+
+
