@@ -1,12 +1,14 @@
+const addedCities = {}
+
 function addRecSeBtn(cityName) {
     if (addedCities[cityName]) { return }
     addedCities[cityName] = true;
     var b = $("<button type='submit' data-value='" + buttonCount + "'>");
     b.addClass("searched");
     b.text(cityName)
-    // storing the searched city to a p tag below inside the search div
     $("#serched-cities").prepend(b);
 }
+
 
 
 function theSearch1() {
