@@ -1,12 +1,46 @@
-const addedCities = {}
+//not sure why code below is not working//
+function currentSearch() {
+    var city = $("#searchBar").val();
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=cdc3f7e4ca3901f64ba887ddc106084f&units=imperial";
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (res) {
+        console.log(res.city.coord.lon)
+        console.log(res.city.coord.lat)
 
-function addRecSeBtn(cityName) {
-    if (addedCities[cityName]) { return }
-    addedCities[cityName] = true;
-    var b = $("<button type='submit' data-value='" + buttonCount + "'>");
-    b.addClass("searched");
-    b.text(cityName)
-    $("#serched-cities").prepend(b);
+        var lon = (res.city.coord.lon);
+        var lat = (res.city.coord.lat);
+        var queryURL = "https://api.openweathermap.org/data/2.5/uvi?&appid=cdc3f7e4ca3901f64ba887ddc106084f&lat=" + lat + "&lon=" + lon;
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            console.log(response.value);
+            console.log(res);
+
+            var city = (res.city.name);
+            // var date1 = (res.list[5].dt_txt).split("-").join("/");
+            var temp1 = (res.list[5].main.temp_max + ' °F');
+            var humid1 = ('Humidity ' + res.list[5].main.humidity + ' %');
+            var wind1 = ('Wind Speed ' + res.list[5].wind.speed + ' Mph')
+            var icon1 = res.list[6].weather[0].icon;
+            var uv1 = (response.value);
+            var weatherIcon1 = "http://openweathermap.org/img/wn/" + icon1 + "@2x.png"
+
+            function appendCurrent() {
+                $("#currentDisplay").empty();
+
+                $("#currentDisplay").append("<h1 class='currentDate'>" + "Today : " + city + "</h1>");
+                $("#currentDisplay").append("<img class='currentImg' src='" + weatherIcon1 + "'>");
+                $("#currentDisplay").append("<p class='currentTemp'>" + "Current Temperature : " + temp1 + "</p>");
+                $("#currentDisplay").append("<p class='currentHumid'>" + "Current Humidity : " + humid1 + "</p>");
+                $("#currentDisplay").append("<p class='currentWind'>" + "Current Wind Speed : " + wind1 + "</p>");
+                $("#currentDisplay").append("<p class='currentUv'>" + "UV Index : " + uv1 + "</p>");
+            }
+            appendCurrent();
+        })
+    });
 }
 
 
@@ -127,7 +161,8 @@ $("#searchBtn").on('click', function () {
     event.preventDefault();
     console.log('You clicked the submit button or enter')
     theSearch1();
-
+    currentSearch();
 });
+
 
 
