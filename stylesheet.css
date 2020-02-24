@@ -1,18 +1,8 @@
 
 
-#uv {
-  margin: auto;
-  background-color: white;
-  height: 150px;
-  width: 150px;
-  border-radius: 3px;
-  border: violet solid 2px;
-}
-
 .location-forecast {
     text-align: center;
     margin: 10px;
-    border: red solid 2px;
 }
 
 #weatherText {
@@ -26,7 +16,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border: blue solid 2px;
 }
 .weatherBoxs{
   margin: 0 0 15px 0 !important;
@@ -34,6 +23,7 @@
   height: 50%;
   width: 25%;
   padding: 5px !important;
+  background-color: #e8f0fe;
   
 }
 .weatherBoxs p{
@@ -54,4 +44,38 @@
 }
 .row:after{
   content: none;
+}
+
+#weatherBox1 {
+  border-top: #9a9a9a solid 2px;
+  border-bottom: #9a9a9a solid 2px;
+  border-left: #9a9a9a solid 2px;
+  border-right: #9a9a9a solid 2px;
+}
+
+#weatherBox2 {
+  border-top: #9a9a9a solid 2px;
+  border-bottom: #9a9a9a solid 2px;
+  border-right: #9a9a9a solid 2px;
+  
+}
+
+#weatherBox3 {
+  border-top: #9a9a9a solid 2px;
+  border-bottom: #9a9a9a solid 2px;
+  border-right: #9a9a9a solid 2px;
+  
+}
+
+#weatherBox4 {
+  border-top: #9a9a9a solid 2px;
+  border-bottom: #9a9a9a solid 2px;
+  border-right: #9a9a9a solid 2px;
+  
+}
+
+#weatherBox5 {
+  border-top: #9a9a9a solid 2px;
+  border-bottom: #9a9a9a solid 2px;
+  border-right: #9a9a9a solid 2px;
 }
