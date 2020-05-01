@@ -44,9 +44,6 @@ How do you deliver this? Here are some guidelines:
 
   * Humidity
 
-![weather dashboard](./Assets/06-Server-Side-APIs-homework-demo.png)
-
-
 
 ## Minimum Requirements
 
@@ -74,6 +71,31 @@ How do you deliver this? Here are some guidelines:
 
 * Application loads last searched city forecast on page load.
 
+## TECH USED
+
+*HTML
+*CSS
+*JSON
+*AJAX
+*jQuery
+*Server-side APIs
+
+## ON LOAD 
+
+![SSH Instructions 6](./assets/Onload.PNG "SSH Instructions 6")
+
+## FIRST ENTRY
+
+![SSH Instructions 6](./assets/City.PNG "SSH Instructions 6")
+
+
+
+
+
+
+
+
+https://rjbovee112.github.io/Weather-APIHW/
 
 
 
