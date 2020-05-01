@@ -73,14 +73,14 @@ How do you deliver this? Here are some guidelines:
 
 ## TECH USED
 
-*HTML
-*CSS
-*JSON
-*AJAX
-*jQuery
-*Server-side APIs
-*Bootstrap
-*JavaScript
+* HTML
+* CSS
+* JSON
+* AJAX
+* jQuery
+* Server-side APIs
+* Bootstrap
+* JavaScript
 
 ## ON LOAD 
 
