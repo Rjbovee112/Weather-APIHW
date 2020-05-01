@@ -79,6 +79,8 @@ How do you deliver this? Here are some guidelines:
 *AJAX
 *jQuery
 *Server-side APIs
+*Bootstrap
+*JavaScript
 
 ## ON LOAD 
 
@@ -88,12 +90,15 @@ How do you deliver this? Here are some guidelines:
 
 ![SSH Instructions 6](./assets/City.PNG "SSH Instructions 6")
 
+## HOW TO USE 
 
+​Type in a cities name in the search bar and click search. On the right side of the screen you will see the current weather and  underneath that you will see the five day forecast. After you click search, a button will appear on the left side of the screen underneath the search bar with the name of the city that you just searched for. When you click on that button the right side of the screen will populate the weather information for that city. When you search for a new city the search button will generate a new history button underneath the search bar, and the old search button will move down a level. Everytime you search for a new city the same process will take place.
 
+## CREATED BY
 
+This weather was created by Robert Bovee
 
-
-
+This link will open the Weather API
 
 https://rjbovee112.github.io/Weather-APIHW/
 
